@@ -1,3 +1,10 @@
+## Requirements
+- numpy == 1.18.1
+- pandas == 1.0.1
+- matplotlib == 3.1.3
+- PyMySQL == 0.9.3  
+- SQLAlchemy  == 1.3.13 
+- seaborn == 0.10.0
 
 ## lists of visualization
 **1. 최근 n일 동안 이루어진 크롤링 현황 파악하기**
