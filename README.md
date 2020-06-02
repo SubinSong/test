@@ -69,9 +69,9 @@
       │       │ ...
       │
       └──├───── test (folder)
-              │ imagefile1001.jpg
-              │ imagefile1002.jpg
-              │ ...
+               │ imagefile1001.jpg
+               │ imagefile1002.jpg
+               │ ...
       
       
       ```
