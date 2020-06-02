@@ -57,13 +57,23 @@
  2. 속성의 이름으로 된 폴더마다 하위 폴더 train, validation, test로 이미지가 구성되어 있음
        ```
       ├── season (folder)
+      │      
       │  ├──── train (folder)
-      │       ├── images (jpg)
+      │       │ imagefile01.jpg
+      │       │ imagefile02.jpg
+      │       │ ...
+      │ 
       │  ├──── validation (folder)
-      │       ├── images (jpg)
-      │  ├──── test (folder)
-      │       ├── images (jpg)
-      └── training_model.py
+      │       │ imagefile101.jpg
+      │       │ imagefile102.jpg
+      │       │ ...
+      │
+      └──├───── test (folder)
+              │ imagefile1001.jpg
+              │ imagefile1002.jpg
+              │ ...
+      
+      
       ```
   
   ### step 1. 실행 환경 세팅
