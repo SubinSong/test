@@ -66,7 +66,6 @@
       └── training_model.py
       ```
   
-# Framework
   ### step 1. 실행 환경 세팅
   - resource/config/test.yaml 파일에서 파라미터 변경
   - local 환경에 맞게 dataset_path 변경
@@ -96,39 +95,41 @@
   - 모델을 직접 학습할 경우: 아래 training_model.py을 실행하여 모델을 학습시키고, 결과를 확인
   ```bash
   python training_model.py
+  
+   - 로그 예시
+  
+     Loss: 1.14746811132240788
+     Top1 acc: 0.7718446601941747
+     Top2 acc: 0.9422785194174758
+     Top3 acc: 0.9839199029126213
+     
+                    precision    recall  f1-score   support
+
+                 0       0.74      0.67      0.70       3453
+                 1       0.90      0.79      0.84       1824
+                 2       0.78      0.83      0.80       6453
+                 3       0.76      0.77      0.77       2454
+
+         micro avg       0.77      0.77      0.77       13184
+         macro avg       0.80      0.76      0.78       13184
+      weighted avg       0.77      0.77      0.77       13184
+       samples avg       0.77      0.77      0.77       13184
+
+      [[ 2298   20  972  163]
+       [ 33   647  113  31]
+       [ 653   43  5367  390]
+       [ 116   12 430  1896]]
+       
+      Evaluation time: 0:07:54.020724
+
+      Process finished with exit code 0
+      
   ```
   
   - 학습 후 저장된 모델을 불러와서 테스트할 경우: 아래 pretrain_model_run.py을 실행하여 결과를 확인
    ```bash
   python pretrain_model_run.py
   ```
-    - 로그 예시
-  
-     Loss: 0.013289468362927437
-     Top1 acc: 0.2805071175098419
-     Top2 acc: 0.5404120683670044
-     Top3 acc: 0.8034865260124207
-     
-                    precision    recall  f1-score   support
-
-                 0       0.34      0.27      0.30       183
-                 1       0.12      0.02      0.03       108
-                 2       0.26      0.58      0.36       159
-                 3       0.30      0.18      0.23       181
-
-         micro avg       0.28      0.28      0.28       631
-         macro avg       0.25      0.26      0.23       631
-      weighted avg       0.27      0.28      0.25       631
-       samples avg       0.28      0.28      0.28       631
-
-      [[ 50   9  98  26]
-       [ 27   2  58  21]
-       [ 33   3  92  31]
-       [ 39   2 107  33]]
-      Evaluation time: 0:07:54.020724
-
-      Process finished with exit code 0
-    
-  
+ 
   
   
