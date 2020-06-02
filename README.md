@@ -72,6 +72,9 @@
   - 'category' 변수에 attribute 이름 지정(e.g. 'gender')
   - 'nb_class' 변수에 위에서 지정한 attribute의 개수 입력(e.g. **'gender'일 경우 5**)
   - 'pretraining_model', 'activation_function' 등 모델 관련 파라미터는 각주에 있는 항목으로 변경 가능
+  
+   ![image](https://user-images.githubusercontent.com/58968614/83546433-9f26e000-a53b-11ea-808d-89d8d43d0c60.png)
+
  
   ### step 2. Data preprocessing
   데이터 전처리 및 모델 업로드 등을 진행합니다. 
