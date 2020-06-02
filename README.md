@@ -52,7 +52,18 @@
      |59263|Women|Accessories|Watches|Watches|Silver|Winter|2016|Casual|Titan|WomenSilver Watch
      |...|...|...|...|...|...|...|...|...|...|
  
- 2. 속성의 이름으로 된 폴더마다 하위 폴더로 train, validation, test로 이미지가 구성되어 있음
+ 2. 속성의 이름으로 된 폴더마다 하위 폴더 train, validation, test로 이미지가 구성되어 있음
+       ```
+      ├── train (folder)
+      │   ├── images (jpg)
+      ├── validation (folder)
+      │   ├── images (jpg)
+      ├── test (folder)
+      │   ├── images (jpg)
+      └── training_model.py
+      ```
+
+
  
   ### step 2. Data preprocessing
   데이터 전처리 및 모델 업로드 등을 진행합니다. 
