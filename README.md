@@ -143,6 +143,13 @@
    ```bash
   python pretrain_model_run.py
   ```
- 
-  
+
+# Experiment result
+
+   |attribute|Top1|Top2|Top3|
+   |------|---|---|---|
+   |baseColour|0.804871|0.923988|0.960477|
+   |gender|0.893780|0.971078|0.993539|
+   |season|0.771844|0.942278|0.983919|
+   
   
