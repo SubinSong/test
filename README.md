@@ -102,4 +102,33 @@
    ```bash
   python pretrain_model_run.py
   ```
- 
+    - 로그 예시
+  
+     Loss: 0.013289468362927437
+     Top1 acc: 0.2805071175098419
+     Top2 acc: 0.5404120683670044
+     Top3 acc: 0.8034865260124207
+     
+                    precision    recall  f1-score   support
+
+                 0       0.34      0.27      0.30       183
+                 1       0.12      0.02      0.03       108
+                 2       0.26      0.58      0.36       159
+                 3       0.30      0.18      0.23       181
+
+         micro avg       0.28      0.28      0.28       631
+         macro avg       0.25      0.26      0.23       631
+      weighted avg       0.27      0.28      0.25       631
+       samples avg       0.28      0.28      0.28       631
+
+      [[ 50   9  98  26]
+       [ 27   2  58  21]
+       [ 33   3  92  31]
+       [ 39   2 107  33]]
+      Evaluation time: 0:07:54.020724
+
+      Process finished with exit code 0
+    
+  
+  
+  
