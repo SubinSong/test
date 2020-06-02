@@ -92,22 +92,18 @@
   python preprocessing.py
   ```
 
-  ### step 3. training model & evaluation
- 학습데이터로 모델을 학습하고 평가합니다. 
- ```bash
- python training.py
-  ```
-  
-  ### step 4. testing 
-  테스트데이터로 모델을 평가합니다. 
-  ```bash
-  python testing.py
-  ```
-  
-  ### step 5. 실행
+  ### step 3. 실행
   - 모델을 직접 학습할 경우: 아래 training_model.py을 실행하여 모델을 학습시키고, 결과를 확인
   ```bash
   python training_model.py
+  
+ 
+      
+  ```
+  
+  - 학습 후 저장된 모델을 불러와서 테스트할 경우: 아래 pretrain_model_run.py을 실행하여 결과를 확인
+   ```bash
+  python pretrain_model_run.py
   
    - 로그 예시
   
@@ -136,12 +132,7 @@
       Evaluation time: 0:07:54.020724
 
       Process finished with exit code 0
-      
-  ```
-  
-  - 학습 후 저장된 모델을 불러와서 테스트할 경우: 아래 pretrain_model_run.py을 실행하여 결과를 확인
-   ```bash
-  python pretrain_model_run.py
+ 
   ```
 
 # Experiment result
