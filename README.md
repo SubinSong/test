@@ -55,12 +55,12 @@
  2. 속성의 이름으로 된 폴더마다 하위 폴더 train, validation, test로 이미지가 구성되어 있음
        ```
       ├── season (folder)
-      ├──── train (folder)
-      │     ├── images (jpg)
-      ├──── validation (folder)
-      │     ├── images (jpg)
-      ├──── test (folder)
-      │     ├── images (jpg)
+      │  ├──── train (folder)
+      │       ├── images (jpg)
+      │  ├──── validation (folder)
+      │       ├── images (jpg)
+      │  ├──── test (folder)
+      │       ├── images (jpg)
       └── training_model.py
       ```
 
