@@ -45,12 +45,12 @@
   ### step 1. Data Preparation
  1. 개별 이미지의 파일 이름과 레이블 정보가 담긴 csv 파일
  
-      |id|gender|baseColour|season|...|
-      |------|---|---|---|---|
-      |15970|Men|Navy Blue|Fall|...|
-      |39386|Men|Blue|Summer|...|
-      |59263|Women|Silver|Winter|...|
-      |...|...|...|...|...|
+     |id|gender|masterCategory|subCategory|articleType|baseColour|season|year|usage|productDisplayName
+     |------|---|---|---|---|---|---|---|---|---|
+     |15970|Men|Apparel|Topwear|Shirts|Navy Blue|Fall|2011|Casual|Turtle Check Men Navy Blue Shirt
+     |39386|Men|Apparel|Bottomwear|Jeans|Blue|Summer|2012	|Casual|Peter England Men Party Blue Jeans
+     |59263|Women|Accessories|Watches|Watches|Silver|Winter|2016|Casual|Titan|WomenSilver Watch
+     |...|...|...|...|...|...|...|...|...|...|
  
  2. 속성의 이름으로 된 폴더마다 하위 폴더로 train, validation, test로 이미지가 구성되어 있음
  
