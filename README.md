@@ -13,7 +13,9 @@
   - 패션스타일이 보이는 사진이기는 하나 외부 조형물이나 이미지 위 디자인으로 오염된 경우
   - 풍경, 동물 사진과 같이 패션이미지가 아닌 경우(e.g. 아래 이미지에서 강아지 사진의 경우)
   - **패션아이템**만 존재하여 스타일을 파악할 수 없는 경우(e.g. 아래 이미지에서 가방과 같은 경우)
- 
+ ![isfashion](https://user-images.githubusercontent.com/58968614/83541928-3dfc0e00-a535-11ea-9979-6ece8c3cc22a.png)
+
+
 - baseColour: **46개의 색상**에 대하여 학습하고 분류함
   - Black
   - Khaki
@@ -63,6 +65,8 @@
       │       ├── images (jpg)
       └── training_model.py
       ```
+  
+# Framework
   ### step 1. 실행 환경 세팅
   - resource/config/test.yaml 파일에서 파라미터 변경
   - local 환경에 맞게 dataset_path 변경
@@ -79,7 +83,7 @@
   ### step 3. training model & evaluation
  학습데이터로 모델을 학습하고 평가합니다. 
  ```bash
- python training_model.py
+ python training.py
   ```
   
   ### step 4. testing 
@@ -88,16 +92,14 @@
   python testing.py
   ```
   
-# 실행법
-### step 1. resource/config/test.yaml 파일에서 파라미터 변경
- - local 환경에 맞게 dataset_path 변경
- - 'category' 변수에 attribute 이름 지정(e.g. 'gender')
- - 'nb_class' 변수에 위에서 지정한 attribute의 개수 입력(e.g. **'gender'일 경우 5**)
- - 'pretraining_model', 'activation_function' 등 모델 관련 파라미터는 각주에 있는 항목으로 변경 가능
-
-### step 2. 모델 학습 실행
- - run/training_model.py 파일 실행
- 
-### step 3. 학습된 모델로 테스트 진행
- - pretrain_model_run.py 파일 실행
+  ### step 5. 실행
+  - 모델을 직접 학습할 경우: 아래 training_model.py을 실행하여 모델을 학습시키고, 결과를 확인
+  ```bash
+  python training_model.py
+  ```
+  
+  - 학습 후 저장된 모델을 불러와서 테스트할 경우: 아래 pretrain_model_run.py을 실행하여 결과를 확인
+   ```bash
+  python pretrain_model_run.py
+  ```
  
